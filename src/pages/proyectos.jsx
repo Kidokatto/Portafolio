@@ -4,7 +4,7 @@ import Card from "../components/card";
 const Proyectos = () => {
   const proyectos = [
     {
-      image: "https://via.placeholder.com/150",
+      image: "../src/assets/img/pixel-art-moon.jpg",
       title: "Proyecto 1",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",

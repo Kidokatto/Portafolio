@@ -57,6 +57,29 @@
     font-size: 20px;
 }
 
+.gato-frame {
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: -30px;
+    position: absolute; /* Permite posicionar el div de forma absoluta dentro del contenedor padre */
+    bottom: 0px; /* Mueve el div al borde inferior */
+    right: 0; /* Mueve el div al borde derecho */
+    margin-bottom: -40px;
+}
+
+.gato-frame{
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    object-position: center;
+    object-fit: cover;
+    
+   
+}
+
+
 .img-container {
     flex: 0.5;
     text-align: center;

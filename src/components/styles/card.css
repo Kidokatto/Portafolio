@@ -2,27 +2,26 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Dos columnas de igual ancho */
     gap: 30px; /* Espacio entre las columnas */
-    padding: 180px;
+    padding: 200px;
 }
 
 .ag-courses_item {
-    border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    background-color: #2b2e34;
     transition: transform 0.3s ease;
 }
 
 .ag-courses_item:hover {
-    transform: translateY(-10px); /* Efecto de elevación al pasar el ratón */
+    transform: translateY(-20px); /* Efecto de elevación al pasar el ratón */
 }
 
 .ag-courses-item_link {
     display: block;
     text-decoration: none;
     color: inherit;
-    padding: 20px;
+    padding: 0px;
 }
 
 .ag-courses-item_bg {
@@ -46,9 +45,9 @@
 }
 
 .card-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .ag-courses-item_date-box {
