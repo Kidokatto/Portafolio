@@ -11,7 +11,7 @@ const Proyectos = () => {
     },
     {
       image: "https://via.placeholder.com/150",
-      title: "Proyecto 2", 
+      title: "Proyecto 2",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
     },
@@ -20,15 +20,11 @@ const Proyectos = () => {
       title: "Proyecto 3",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
-
-    }
-
-
-
+    },
   ];
 
   return (
-    <section id="projects"> 
+    <section id="projects">
       <h2>Proyectos</h2>
       <div className="cards-container">
         {proyectos.map((proyecto, index) => (

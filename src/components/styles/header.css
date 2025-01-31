@@ -1,78 +1,63 @@
 /* header.css */
 
-
-* {   
-  margin: 0;  /* Elimina márgenes del body */
+* {
+  margin: 0; /* Elimina márgenes del body */
   padding: 0; /* Elimina relleno del body */
-  background-size: cover;  /* Asegura que el fondo cubra toda la pantalla */
-  background-position: center;  /* Centra el fondo en la pantalla */
+  background-size: cover; /* Asegura que el fondo cubra toda la pantalla */
+  background-position: center; /* Centra el fondo en la pantalla */
 }
 
-    
-  .nick-name-github {
-    color: white;
-    display: flex;
-    margin-left: 25vh;
-  }
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0d1117;
+  padding: 18px;
+  font-size: 20px;
+  display: flex; /* Usamos Flexbox */
+  justify-content: space-between; /* Esto distribuye los elementos: logo a la izquierda y la lista a la derecha */
+  align-items: center; /* Alinea verticalmente los elementos */
+  border-bottom: 2px solid white;
+  z-index: 1000;
+}
 
-  .nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #0d1117;
-    padding: 18px;
-    font-size: 20px;
-    display: flex;             /* Usamos Flexbox */
-    justify-content: space-between;  /* Esto distribuye los elementos: logo a la izquierda y la lista a la derecha */
-    align-items: center;        /* Alinea verticalmente los elementos */
-    border-bottom: 2px solid white;
-    z-index: 1000;
-  }
-  
- 
+.logo img {
+  height: 50px; /* Ajusta el tamaño del logo */
+  top: 5px;
+  position: absolute;
+  border-radius: 40px;
+  left: 21vh;
+  transition: opacity 0.5s ease-in-out;
+}
 
-  .logo img {
-    height: 50px;  /* Ajusta el tamaño del logo */
-    top : 5px;
-    position: absolute;
-    border-radius: 40px;
-    left: 20vh;
-    transition: opacity 0.5s ease-in-out;
-  }
+.logo img:hover {
+  opacity: 0;
+}
 
-    .logo img:hover {
-        opacity: 0;
-    }
+.nav_list {
+  display: flex;
+  list-style-type: none;
+  margin-right: 21vh;
+  color: white;
+}
 
-  .nav_list {
-    display: flex;
-    list-style-type: none;
-    margin-right: 18vh;
-    color: white;
+.nav_list li {
+  margin-right: 30px; /* Espacio entre los elementos de la lista */
+}
 
-  }
-  
-  .nav_list li {
-    margin-right: 30px;   /* Espacio entre los elementos de la lista */
-    
-
-  }
-  
 .nav_list li a {
-    text-decoration: none;
-    color: white;
-    transition: all 0.3s ease; /* Transición suave */
-    
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease; /* Transición suave */
 }
-  
+
 .nav_list li a:hover {
   position: static;
-    background-color: white;
-    border-radius: 50px;
-    color: black;
-    padding: 1px 1px;
-
+  background-color: white;
+  border-radius: 50px;
+  color: black;
+  padding: 1px 1px;
 }
 
 html {

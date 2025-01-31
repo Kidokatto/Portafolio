@@ -5,13 +5,19 @@ const Header = () => {
     <header>
       <nav className="nav">
         <div className="logo">
-          
-        <img className="imglogo2" src="../src/assets/img/github-mark-white.png" alt="Logo" />
-          <a href="https://github.com/Kidokatto"><img className="imglogo" src="../src/assets/img/pixel-art-moon.jpg" alt="Logo" />
+          <img
+            className="imglogo2"
+            src="../src/assets/img/github-mark-white.png"
+            alt="Logo"
+          />
+          <a href="https://github.com/Kidokatto">
+            <img
+              className="imglogo"
+              src="../src/assets/img/pixel-art-moon.jpg"
+              alt="Logo"
+            />
           </a>
-       
         </div>
-      
 
         <ul className="nav_list">
           <li>
@@ -31,9 +37,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-
     </header>
   );
-
-}
-export default Header
+};
+export default Header;
