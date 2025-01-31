@@ -21,7 +21,7 @@
     display: block;
     text-decoration: none;
     color: inherit;
-    padding: 0px;
+    padding: 15px;
 }
 
 .ag-courses-item_bg {
@@ -35,8 +35,9 @@
 }
 
 .card-title {
-    font-size: 1.5em;
+    font-size: 2em;
     margin: 0;
+    color: rgb(10, 252, 14);
 }
 
 .imgProject-container {

@@ -1,15 +1,14 @@
 #about-container {
 
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 10vh;
-    margin-bottom: 40px;
-    margin-left: 20vh;
+    justify-content: flex-start;
+    align-items:flex-start;
+    margin-top: 20vh;
+    margin-left: 40vh;
+    margin-right: 40vh;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
+    width: auto;
     border-bottom: 3px solid rgb(252, 255, 251);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
     opacity: 0;
@@ -25,7 +24,7 @@
 }
 
 
-.mi-foto{
+.img-container .mi-foto{
     border-radius: 10%;
     width: 250px;
     height: 250px;
@@ -37,8 +36,23 @@
 
 }
 
+.mi-foto{
+    min-height: 250px;
+    min-width: 250px;
+}
+
+.img-container {
+    flex: 0.5;
+    text-align: center;
+    
+}
+
+
+
+
 .description-container {
     margin-top: 40px;
+    margin-right: 20px;
     flex: 2;
     display: flex;
     flex-direction: column;
@@ -46,8 +60,9 @@
 }
 
 .description {
-    text-align: left;
+    text-align: justify;
     color: #fff;
+    
 }
 
 .mi-descripcion-container {
@@ -80,11 +95,6 @@
 }
 
 
-.img-container {
-    flex: 0.5;
-    text-align: center;
-    
-}
 
 .name-h2 {
     margin: 0;
@@ -92,12 +102,22 @@
     color: rgb(10, 252, 14);
 }
 
+.title-container {
+    display: flex;
+    justify-content: center;
+
+}
 
 .title2{
     display: flex;
     justify-content: center;
     margin-top: 80px;
-    color: rgb(10, 252, 14);
+    margin-bottom: 40px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(125, 124, 124);
+    border-radius: 20px;
+    padding: 10px 10px;
 }
 .lista-container {
     display: flex; 

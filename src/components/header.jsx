@@ -9,7 +9,7 @@ const Header = () => {
         <img className="imglogo2" src="../src/assets/img/github-mark-white.png" alt="Logo" />
           <a href="https://github.com/Kidokatto"><img className="imglogo" src="../src/assets/img/pixel-art-moon.jpg" alt="Logo" />
           </a>
-          <h1 className="nick-name-github">Kidokatto</h1>
+       
         </div>
       
 
