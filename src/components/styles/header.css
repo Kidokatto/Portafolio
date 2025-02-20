@@ -27,7 +27,7 @@
   top: 5px;
   position: absolute;
   border-radius: 40px;
-  left: 21vh;
+  left: 35vh;
   transition: opacity 0.5s ease-in-out;
 }
 
@@ -38,7 +38,7 @@
 .nav_list {
   display: flex;
   list-style-type: none;
-  margin-right: 21vh;
+  margin-right: 35vh;
   color: white;
 }
 

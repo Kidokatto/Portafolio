@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-top: 20vh;
+  margin-top: 15vh;
   margin-left: 40vh;
   margin-right: 40vh;
   border-radius: 20px;
@@ -104,6 +104,7 @@
   border-radius: 20px;
   padding: 10px 10px;
 }
+
 .lista-container {
   display: flex;
   align-items: center;
@@ -113,7 +114,7 @@
 .lista-container ul {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 10px;
   list-style-type: none;
   margin-top: 10px;
 }
@@ -121,7 +122,7 @@
 .experience-logo {
   width: 60px;
   height: 60px;
-  margin: 10px;
+  margin: 0px;
   object-fit: cover;
 }
 
@@ -129,7 +130,8 @@
   scroll-margin-top: 140px;
 }
 
-.contac-num1 {
+.contac-num1,
+.contac-num2 {
   height: auto;
   position: absolute;
   object-fit: contain;
@@ -142,23 +144,13 @@
 }
 
 .contac-num2 {
-  position: absolute;
-  height: auto;
-  object-fit: contain;
   width: 40px;
   margin-left: 360px;
-  margin-bottom: 30px;
-  bottom: 0px; /* Mueve el div al borde inferior */
-  left: 0; /* Mueve el div al borde derecho */
   filter: brightness(0) saturate(100%) invert(50%) sepia(100%) saturate(500%)
     hue-rotate(180deg);
 }
 
-.contac-num1:hover {
-  filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(180deg);
-  transition: filter 0.3s ease;
-}
-
+.contac-num1:hover,
 .contac-num2:hover {
   filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(180deg);
   transition: filter 0.3s ease;
@@ -167,7 +159,6 @@
 .show-more-button {
   background-color: #4954cf; /* Color de fondo */
   width: 200px;
-
   height: 40px;
   color: white; /* Color del texto */
   border: none; /* Sin borde */
@@ -191,4 +182,78 @@
 
 .strong-frase {
   color: #f70cfb;
+}
+
+/* Media Queries para hacer el diseño responsive */
+@media (max-width: 1200px) {
+  #about-container {
+    margin-left: 20vh;
+    margin-right: 20vh;
+  }
+}
+
+@media (max-width: 768px) {
+  #about-container {
+    flex-direction: column;
+    margin-left: 10vh;
+    margin-right: 10vh;
+  }
+
+  .mi-descripcion-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: -110px;
+  }
+
+  .description-container {
+    margin-right: 0;
+    align-items: center;
+  }
+
+  .img-container {
+    margin-bottom: 20px;
+  }
+
+  .gato-frame {
+    position: static;
+    margin: 20px auto 0;
+  }
+
+  .contac-num1,
+  .contac-num2 {
+    position: static;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  #about-container {
+    margin-left: 5vh;
+    margin-right: 5vh;
+  }
+
+  .title2 {
+    font-size: 30px;
+    padding: 5px 10px;
+  }
+
+  .experience-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .show-more-button {
+    width: 100%;
+  }
+
+  .contac-num1,
+  .contac-num2 {
+    width: 30px;
+    margin: 5px;
+  }
+
+  .gato-frame {
+    width: 100px;
+    height: 100px;
+  }
 }
